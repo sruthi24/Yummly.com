@@ -1,0 +1,290 @@
+body
+{
+    background: #EC8304;
+    font-family: Roboto,sans-serif;
+}
+header
+{
+    border-bottom: solid 1px #EA9C10;
+}
+a
+{
+    text-decoration: none !important;
+}
+#logo
+{
+    width: 156px;
+    height: 50px;
+    background: url(../images/logo.png) no-repeat;
+    float: left;
+    background-size: 156px 50px;
+}
+#custom-search-input
+{
+    padding-top: 10px;
+    width: 400px;
+    float: right;
+}
+.navbar-brand
+{
+    position: relative;
+    z-index: 2;
+}
+
+.navbar-nav.navbar-right .btn
+{
+    position: relative;
+    z-index: 2;
+    padding: 4px 20px;
+    margin: 10px auto;
+}
+
+.navbar .navbar-collapse
+{
+    position: relative;
+}
+.navbar .navbar-collapse .navbar-right > li:last-child
+{
+    padding-left: 22px;
+}
+
+.navbar .nav-collapse
+{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding-right: 120px;
+    padding-left: 80px;
+    width: 100%;
+}
+.navbar.navbar-default .nav-collapse
+{
+    background-color: #f8f8f8;
+}
+.navbar.navbar-inverse .nav-collapse
+{
+    background-color: #222;
+}
+.navbar .nav-collapse .navbar-form
+{
+    border-width: 0;
+    box-shadow: none;
+}
+.nav-collapse > li
+{
+    float: right;
+}
+
+.btn.btn-circle
+{
+    border-radius: 50px;
+}
+.btn.btn-outline
+{
+    background-color: transparent;
+}
+
+@media screen and (max-width: 767px)
+{
+    .navbar .navbar-collapse .navbar-right > li:last-child
+    {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .navbar .nav-collapse
+    {
+        margin: 7.5px auto;
+        padding: 0;
+    }
+    .navbar .nav-collapse .navbar-form
+    {
+        margin: 0;
+    }
+    .nav-collapse > li
+    {
+        float: none;
+    }
+}
+.navbar-nav > li > a
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover
+{
+    background-color: #2E99BF;
+    color: #fff;
+}
+.navbar-default .navbar-nav > li > a:hover
+{
+    background-color: #DCE8EC;
+}
+
+.section-wrapper
+{
+    margin-top: 100px;
+}
+.section-title
+{
+    font-family: 'Shadows Into Light' ,arial,sans-serif;
+    color: #fff;
+}
+.recipes
+{
+    float: left;
+    clear: both;
+    width: 100%;
+}
+.recipe
+{
+    float: left;
+    width: 23%;
+    margin: 10px 1%;
+    background: #fff;
+    height: 240px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s all ease-in-out;
+    opacity: 0;
+    transform: translateY(100%);
+}
+.recipe-top
+{
+    border-radius: 5px 5px 0 0;
+    background: #3BACD4;
+    padding: 5px;
+}
+.recipe-top a
+{
+    color: #fff;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.recipe .recipe-image
+{
+    width: 100%;
+}
+.recipe-middle
+{
+    position: relative;
+    overflow: hidden;
+}
+.recipe:hover .recipe-hover
+{
+    transform: translateX(0%);
+}
+.recipe-hover
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0,0,0,0.8);
+    padding: 20px;
+    color: #fff;
+    transition: 0.5s all ease-in-out;
+    transform: translateX(100%);
+}
+.recipe-hover strong
+{
+    display: block;
+    border-bottom: dashed 1px #ccc;
+    margin-bottom: 10px;
+    color: #FFCEC3;
+    overflow: hidden;
+}
+.recipe-notes
+{
+    font-size: 12px;
+    color: #999;
+    padding: 9px;
+    border-top: solid 1px #ccc;
+}
+footer
+{
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-top: dashed 1px #ccc;
+    margin-top: 20px;
+}
+.modal-footer
+{
+    clear: both;
+}
+.img-responsive
+{
+    width: 100%;
+    border: 3px solid #999;
+    padding: 2px;
+    -webkit-border-radius: 50px 0;
+    -moz-border-radius: 50px 0;
+    border-radius: 50px 0;
+}
+.modal-header
+{
+    background-color: #EC8304;
+    -webkit-border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+    border-radius: 4px 4px 0 0;
+    color: #fff;
+}
+.modal-title
+{
+    font-size: 22px;
+    line-height: 0.7;
+    font-family: 'Bree Serif' , serif;
+}
+.modal-body
+{
+    overflow: hidden;
+}
+.modal-body .row
+{
+    margin-bottom: 10px;
+}
+.modal-body a
+{
+    text-decoration: underline !important;
+    color: #EC8304;
+}
+.modal-header button.close
+{
+    opacity: 1;
+    color: #fff;
+}
+.ui-widget-content
+{
+    z-index: 9999999999999999;
+}
+.ui-menu .ui-menu-item
+{
+    font-size: 13px;
+}
+.ui-menu .ui-menu-item:hover
+{
+    background: #999 !important;
+    color: #fff;
+}
+
+.det-container-hdr
+{
+    background-color: White;
+    color: #EC8304;
+}
+
+.load-style
+{
+    width: 50%;
+    margin: auto;
+}
